@@ -1,0 +1,16 @@
+body {
+    background-color: #ffe3e3;
+    font-family: Arial, sans-serif;
+}
+
+/* h1 */
+h1 {
+    color: #ff6f61;
+    /* text-align: center; */
+    /* margin-top: 50px; */
+    /* padding: 20px; */
+    padding: 20px 10px;
+    padding: 20px 10px 8px 5px;
+
+    border: 2px solid #ff6f61;
+}
