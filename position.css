@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 2000px; /* Para permitir el desplazamiento y ver el efecto de position: fixed */
+}
+
+.contenedorA {
+    position: static;
+}
+
+.contenedorB {
+    position: relative;
+    background-color: rgba(173, 216, 230, 0.889);
+    top: 100px;
+    left: 30px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contenedorC {
+    position: fixed;
+    background-color: rgb(255, 0, 0);
+    top: 50px;
+    right: 70px;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 999; /* Asegura que el contenedor esté por encima de otros elementos */
+}
+
+.bi-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: #25D366;
+    z-index: 1000; /* Asegura que el icono esté por encima de otros elementos */
+}   
+
+.contenedorD {
+    position: relative;
+    background-color: rgba(255, 255, 0, 0.5);
+    padding: 20px;
+    margin-top: 20px;
+    height: 150px;
+}
+
+.contenedor_hijo {
+    position: absolute;
+    /* top: 10px; */
+    bottom: -15px;
+    /* left: 10px; */
+    right: 10px;
+    background-color: rgba(0, 255, 0, 0.5);
+    padding: 10px;
+}
