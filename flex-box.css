@@ -1,0 +1,76 @@
+/* CSS Normalizing reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Altura total de la ventana del navegador, (vh significa viewport height) */
+}
+
+/* Contenedor padre */
+.container {
+    background-color: #f5abab;
+    height: 100%;
+
+    display: flex;
+    /* Dirección de los elementos hijos */
+    /* flex-direction: row;  */
+    /* flex-direction: column ;  */
+
+    /* Alineacion vertical de los elementos hijos */
+    align-items: center;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: stretch; */
+
+    /*Alineacion horizontal de los elementos hijos */
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    justify-content: space-around;
+
+}
+
+/* Contenedores hijos */
+.item {
+    background-color: #abf5ab;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+}
+
+nav {
+    background-color: #ffe8a4;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+ul {
+    background-color: #c8ffa4;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+footer {
+    background-color: #514668;
+    text-align: center;
+    padding: 10px 0;
+}
