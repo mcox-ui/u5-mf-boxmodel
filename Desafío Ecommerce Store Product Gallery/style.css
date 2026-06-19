@@ -1,0 +1,30 @@
+body {
+    background-color: #c0c0c0;
+
+}
+
+.galeria {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color: #3498db;
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    color: white;
+    font-size: 2rem;
+    border-radius: 8px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
